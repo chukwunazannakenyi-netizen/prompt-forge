@@ -60,7 +60,7 @@ jobs:
         run: corepack use yarn@4.9.2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
           cache: "yarn"
@@ -77,7 +77,7 @@ jobs:
           yarn npm audit --recursive --json > reports/npm-audit.json || true
 
       - name: Set up Node.js (server lockfile)
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
           cache: npm
