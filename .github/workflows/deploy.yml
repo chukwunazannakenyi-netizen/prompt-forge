@@ -298,7 +298,7 @@ jobs:
           mv contracts/prompt-hash/contract-sbom.json sbom/contract-sbom.json
 
       - name: Use Node.js for server SBOM (no Corepack needed)
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "22"
           cache: "npm"
